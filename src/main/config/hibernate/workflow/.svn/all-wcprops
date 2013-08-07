@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/ticm/!svn/ver/314/trunk/01.%E5%BC%80%E5%8F%91%E5%BA%93/01.TICM/CODE/Ticm_Base/src/main/config/hibernate/workflow
+END
+FlowTask.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/ticm/!svn/ver/314/trunk/01.%E5%BC%80%E5%8F%91%E5%BA%93/01.TICM/CODE/Ticm_Base/src/main/config/hibernate/workflow/FlowTask.hbm.xml
+END
+Depflow.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/ticm/!svn/ver/93/trunk/01.%E5%BC%80%E5%8F%91%E5%BA%93/01.TICM/CODE/Ticm_Base/src/main/config/hibernate/workflow/Depflow.hbm.xml
+END
+FlowProcess.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/ticm/!svn/ver/247/trunk/01.%E5%BC%80%E5%8F%91%E5%BA%93/01.TICM/CODE/Ticm_Base/src/main/config/hibernate/workflow/FlowProcess.hbm.xml
+END

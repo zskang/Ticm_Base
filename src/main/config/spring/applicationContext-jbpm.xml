@@ -1,0 +1,40 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd 
+						http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd 
+						http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
+	<!-- JBPM基础配置开始 -->
+	<bean id="springHelper"
+		class="org.jbpm.pvm.internal.processengine.SpringHelper">
+		<property name="jbpmCfg" value="spring-jbpm4.cfg.xml" />
+	</bean>
+
+	<bean id="processEngine" factory-bean="springHelper"
+		factory-method="createProcessEngine" />
+	<bean id="repositoryService" factory-bean="processEngine"
+		factory-method="getRepositoryService" />
+	<bean id="executionService" factory-bean="processEngine"
+		factory-method="getExecutionService" />
+	<bean id="taskService" factory-bean="processEngine"
+		factory-method="getTaskService" />
+	<bean id="historyService" factory-bean="processEngine"
+		factory-method="getHistoryService" />
+	<bean id="identityService" factory-bean="processEngine"
+		factory-method="getIdentityService" />
+	<!-- JBPM基础配置结束 -->
+
+	<!-- Spring管理Dao -->
+	<!-- 业务与流程关联DAO -->
+	<bean name="flowProcessDao"
+		class="com.joyin.ticm.workflow.dao.impl.FlowProcessDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<!-- 业务与流程任务关联DAO -->
+	<bean name="flowTaskDao"
+		class="com.joyin.ticm.workflow.dao.impl.FlowTaskDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+</beans>
