@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<process key="depleveTest" name="depleveTest"  xmlns="http://jbpm.org/4.4/jpdl">
+   <start g="60,102,48,48" name="start1">
+      <transition g="-37,-24" name="to 申请经办" to="申请经办"/>
+   </start>
+   <task assignee="${user}" g="175,97,92,52" name="申请经办">
+      <transition g="-45,-22" name="to 申请复核" to="申请复核"/>
+   </task>
+   <task g="333,99,92,52" name="申请复核">
+      <transition g="-36,-21" name="to 受理经办" to="受理经办"/>
+   </task>
+   <task g="838,243,92,52" name="上传协议书">
+      <transition g="-72,-12" name="to 资金划拨" to="资金划拨"/>
+   </task>
+   <task g="839,337,92,52" name="资金划拨">
+      <transition g="-50,-22" name="to end1" to="end1"/>
+   </task>
+   <end g="862,448,48,48" name="end1"/>
+   <task g="502,99,92,52" name="受理经办">
+      <transition name="to exclusive1" to="exclusive1" g="-30,-34"/>
+   </task>
+   <task g="839,99,92,52" name="受理复核">
+      <transition name="to 上传协议书" to="上传协议书" g="-81,-22"/>
+   </task>
+   <decision name="exclusive1" g="663,100,48,48">
+   	<handler class="com.service.dep.HandlerDecision"></handler>
+      <transition name="金额大于200W" to="受理复核" g="-41,-25"/>
+      <transition name="金额小于等于200W" to="上传协议书" g="687,265:-118,-37"/>
+   </decision>
+</process>

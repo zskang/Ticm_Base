@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/ticm/!svn/ver/377/trunk/01.%E5%BC%80%E5%8F%91%E5%BA%93/01.TICM/CODE/Ticm_Base/src/main/config
+END
+hibernate.cfg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/ticm/!svn/ver/375/trunk/01.%E5%BC%80%E5%8F%91%E5%BA%93/01.TICM/CODE/Ticm_Base/src/main/config/hibernate.cfg.xml
+END
+key.properties
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/ticm/!svn/ver/2/trunk/01.%E5%BC%80%E5%8F%91%E5%BA%93/01.TICM/CODE/Ticm_Base/src/main/config/key.properties
+END
+sql.properties
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/ticm/!svn/ver/247/trunk/01.%E5%BC%80%E5%8F%91%E5%BA%93/01.TICM/CODE/Ticm_Base/src/main/config/sql.properties
+END
+commons-logging.properties
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/ticm/!svn/ver/2/trunk/01.%E5%BC%80%E5%8F%91%E5%BA%93/01.TICM/CODE/Ticm_Base/src/main/config/commons-logging.properties
+END
+log4j.properties
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/ticm/!svn/ver/2/trunk/01.%E5%BC%80%E5%8F%91%E5%BA%93/01.TICM/CODE/Ticm_Base/src/main/config/log4j.properties
+END
+ehcache.xml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/ticm/!svn/ver/105/trunk/01.%E5%BC%80%E5%8F%91%E5%BA%93/01.TICM/CODE/Ticm_Base/src/main/config/ehcache.xml
+END
+message.properties
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/ticm/!svn/ver/111/trunk/01.%E5%BC%80%E5%8F%91%E5%BA%93/01.TICM/CODE/Ticm_Base/src/main/config/message.properties
+END
+jbpm.properties
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/ticm/!svn/ver/287/trunk/01.%E5%BC%80%E5%8F%91%E5%BA%93/01.TICM/CODE/Ticm_Base/src/main/config/jbpm.properties
+END
+spring-jbpm4.cfg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/ticm/!svn/ver/93/trunk/01.%E5%BC%80%E5%8F%91%E5%BA%93/01.TICM/CODE/Ticm_Base/src/main/config/spring-jbpm4.cfg.xml
+END
