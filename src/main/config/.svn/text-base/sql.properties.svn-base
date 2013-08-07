@@ -1,2 +1,0 @@
-sqltest=from USER where 1\=1
-flow_process_findbyproperty=from FlowProcess  where ?\=? order by dbid desc
